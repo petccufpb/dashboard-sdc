@@ -1,4 +1,4 @@
-# Você Digital
+# Dashboard SDC
 
 ## Dashboard SDC
 Aplicação desenvolvida para o gerenciamento do evento Semana da Computação
