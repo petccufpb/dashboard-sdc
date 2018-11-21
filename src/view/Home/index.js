@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
-import { DatePicker } from 'antd';
+
+import './styles.css';
 
 class Home extends Component {
-  render() {
-    return (
-      <DatePicker />
-    );
-  }
+	render() {
+		return <h1>Home</h1>;
+	}
 }
 
 export default Home;
