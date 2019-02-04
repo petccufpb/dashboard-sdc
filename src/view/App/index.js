@@ -4,7 +4,7 @@ import { Layout, Menu, Icon } from 'antd';
 import { Route, Switch, Redirect } from 'react-router-dom';
 
 import './styles.css';
-import { PalestrasRoute, HomeRoute, MinicursoRoute } from '../../routes';
+import { PalestrasRoute, HomeRoute, MinicursoRoute, SorteioRoute } from '../../routes';
 
 const { Header, Sider, Content } = Layout;
 
@@ -56,6 +56,10 @@ class App extends Component {
 							<Icon type="laptop" />
 							<span>Minicursos</span>
 						</Menu.Item>
+						<Menu.Item key="/sorteio">
+							<Icon type="laptop" />
+							<span>Sorteio</span>
+						</Menu.Item>
 					</Menu>
 				</Sider>
 				<Layout>
@@ -71,6 +75,7 @@ class App extends Component {
 							<Route exact path="/" component={HomeRoute} />
 							<Route path="/palestras" component={PalestrasRoute} />
 							<Route path="/minicursos" component={MinicursoRoute} />
+							<Route path="/sorteio" component={SorteioRoute} />
 						</Switch>
 					</Content>
 				</Layout>
